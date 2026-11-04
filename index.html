@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.svg">
-    <meta name="theme-color" content="#244c3b">
+    <link rel="icon" href="images/grass.png">
+    <meta name="theme-color" content="#0052af">
     <meta name="description" content="Un mundo incremental en 2D. Corta hierba, mejora tu jardín y progresa hasta las estrellas.">
-    <title>Grassland — Un corte más</title>
+    <title>Really Grass Cutting Incremental · 2D</title>
 
     <script src="js/utils/break_eternity.js"></script>
     <script src="js/utils/Element.js"></script>
@@ -19,10 +19,10 @@
     <script src="js/canvas.js"></script>
     <script src="js/map.js"></script>
     <script src="js/reset.js"></script>
-    <script src="js/upgrades.js"></script>
+    <script src="js/upgrades.js?v=classic-2"></script>
 
     <script src="js/calc.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=classic-2"></script>
 
     <script src="js/stats.js"></script>
 
@@ -43,7 +43,7 @@
     <script src="js/features/obelisk.js"></script>
 
     <link rel="stylesheet" href="legacy.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=classic-2">
 </head>
 <body onload="bootGrassland()">
     <input id="copy" style="position: absolute; top: 0; left: 0; user-select: all; visibility: hidden;">
@@ -132,7 +132,7 @@
 				Really Grass Cutting Incremental - Extension 11h - v0.4.4.2.1 - Made by <a href="https://aarextiaokhiao.github.io/">TehAarex</a><br>
 				Inspired by <a href="https://www.roblox.com/games/9292879820">Grass Cutting Incremental</a>,
 				<a href="https://mrredshark77.github.io/Really-Grass-Cutting-Incremental/">Original by MrRedShark77</a><br>
-				<b class="red">Warning! Recommended size is 1920x1080! You may change zoom!</b><br><br>
+				Classic 2D adaptation · Mouse, touch and keyboard controls.<br><br>
                 Endgame: Level 22,000+; Astral Prestige 2; Grass Jump 12+; Planetary Tier 10+<br><br>
 
 				Hint: Use arrow keys / WASD keys to move through the map. Hold shift to upgrade instantly.
@@ -341,7 +341,7 @@
                 </div>
             </div>
         </div>
-        <div style="position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%);">
+        <div id="classic-navigation" style="position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%);">
             <button id="mapBtn" onclick="go_to = !go_to">Map</button>
             <button id="lMap" onclick="moveMap(-1,0)" class="locked">◀</button>
             <button id="rMap" onclick="moveMap(1,0)" class="locked">▶</button>
@@ -352,6 +352,6 @@
         </div>
 		<div id="map_div">Hi</div>
     </div>
-<script src="game.js"></script>
+<script src="game.js?v=classic-2"></script>
 </body>
 </html>

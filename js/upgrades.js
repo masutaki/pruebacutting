@@ -1063,7 +1063,7 @@ function setupUpgradesHTML(id) {
             else icon.push('Icons/Placeholder')
 
             html += `
-            <div class="upg_ctn" id="upg_ctn_${id}${x}" onclick="tmp.upg_ch.${id} = ${x}">`
+            <div class="upg_ctn" role="button" tabindex="0" aria-label="${upg.title}" id="upg_ctn_${id}${x}" onclick="clickUpgrade('${id}',${x})">`
             for (i in icon) html +=
                 `<img class="img_desc" draggable="false" src="${"images/"+icon[i]+".png"}">`
             html += `<img class='img_desc' id="upg_ctn_${id}${x}_max_base" draggable="false" src="images/max.png">

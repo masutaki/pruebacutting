@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
-const scripts = [...fs.readFileSync(path.join(root, 'index.html'),'utf8').matchAll(/<script src="(js\/[^"?]+)"/g)].map(m=>m[1]);
+const scripts = [...fs.readFileSync(path.join(root, 'index.html'),'utf8').matchAll(/<script src="(js\/[^"?]+)(?:\?[^"<>]*)?"/g)].map(m=>m[1]);
 
 function engine() {
   const storage = new Map(), intervals = new Set(); let intervalId=0;

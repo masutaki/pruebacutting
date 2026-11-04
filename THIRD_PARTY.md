@@ -4,4 +4,6 @@ El motor y los iconos proceden de [Really Grass Cutting Incremental — extensi�
 
 La extensión acredita a TehAarex. `js/utils/break_eternity.js` es la biblioteca break_eternity.js, de Patashu, también MIT; su aviso se conserva en `THIRD_PARTY_LICENSES.txt`.
 
-Esta adaptación añade una interfaz nueva, representación 2D, accesibilidad, controles táctiles y correcciones de carga, guardado y temporizadores. Inspirada en Grass Cutting Incremental de Roblox. No es un producto oficial de Roblox.
+La presentación conserva el HTML, la paleta, los paneles, las cuadrículas de iconos y la representación 2D originales del rework. La adaptación añade accesibilidad, controles táctiles, ajustes para móvil y correcciones de carga, guardado y temporizadores. Inspirada en Grass Cutting Incremental de Roblox. No es un producto oficial de Roblox.
+
+La tipografía Inconsolata se distribuye bajo SIL Open Font License 1.1. El archivo local es el mismo que incluye el rework; su licencia y atribuciones completas están en [fonts/OFL.txt](fonts/OFL.txt).
